@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CONTACT US FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style_form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <aside id="form-side">
+        <h1>Get in <span>touch</span></h1>
+        <p class="desc">
+          Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
+          molestie vel, ornare non id blandit netus.
+        </p>
+
+        <form>
+          <input
+            type="text"
+            name="name"
+            placeholder="Contact name"
+            class="inputan"
+          />
+          <input
+            type="text"
+            name="street"
+            placeholder="Street"
+            class="inputan"
+          />
+          <span class="address">
+            <input type="text" name="city" placeholder="City" class="inputan" />
+            <input
+              type="text"
+              name="postcode"
+              placeholder="Postcode"
+              class="inputan"
+            />
+          </span>
+          <input
+            type="tel"
+            name="contact_phone"
+            placeholder="Contact Phone"
+            class="inputan"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="inputan"
+          />
+          <input
+            type="text"
+            name="idea"
+            placeholder="Let's talk about your idea"
+            class="inputan"
+          />
+          <div class="wrap-input-file">
+            <input class="input-file" type="file" id="input-file" />
+            <label for="input-file"
+              >Attach file. File size of your documents should not exceed
+              10MB</label
+            >
+          </div>
+          <span class="protect">
+            <input type="checkbox" name="is_protect" id="is_protect" />
+            <label for="is_protect"
+              >I want to protect my data by signing an NDA</label
+            >
+          </span>
+          <button class="btn-submit" type="submit">SUBMIT</button>
+          <div class="wrap-contact">
+            <span class="contact">
+              <img src="assets/call_icon.png" alt="call_icon" />
+              <span>
+                <p>Phone</p>
+                <small>111 111 111</small>
+              </span>
+            </span>
+            <span class="contact">
+              <img src="assets/email_icon.png" alt="call_icon" />
+              <span>
+                <p>E-MAIL</p>
+                <small>info@company.com</small>
+              </span>
+            </span>
+            <span class="contact">
+              <img src="assets/call_icon.png" alt="call_icon" />
+              <span>
+                <p>HELPDESK</p>
+                <small
+                  ><a href="https://helpdesk.com"
+                    >https://helpdesk.com</a
+                  ></small
+                >
+              </span>
+            </span>
+          </div>
+        </form>
+      </aside>
+      <aside id="map-side">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3949.3800167357426!2d113.7153196!3d-8.1644142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd694351d727e69%3A0xec33c34804a10832!2sUniversity%20of%20Jember!5e0!3m2!1sen!2sid!4v1757232382869!5m2!1sen!2sid"
+          class="embed-map"
+          width="800"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </aside>
+      <div id="hiasan"></div>
+    </main>
+  </body>
+</html>
