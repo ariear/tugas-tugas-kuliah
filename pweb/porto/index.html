@@ -15,13 +15,26 @@
   <body>
     <header class="container font-poppins">
       <nav>
-        <h3>Ariear.</h3>
+        <h3><a href="#home">Ariear.</a></h3>
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About Me</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about-me">About Me</a></li>
         </ul>
+        <div id="hamburger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <path d="M15.3327 13.3843C14.8244 13.3843 14.3368 13.5862 13.9774 13.9457C13.6179 14.3051 13.416 14.7926 13.416 15.3009C13.416 15.8093 13.6179 16.2968 13.9774 16.6562C14.3368 17.0157 14.8244 17.2176 15.3327 17.2176H30.666C31.1743 17.2176 31.6619 17.0157 32.0213 16.6562C32.3808 16.2968 32.5827 15.8093 32.5827 15.3009C32.5827 14.7926 32.3808 14.3051 32.0213 13.9457C31.6619 13.5862 31.1743 13.3843 30.666 13.3843H15.3327ZM13.416 23.0002C13.416 22.4919 13.6179 22.0044 13.9774 21.6449C14.3368 21.2855 14.8244 21.0835 15.3327 21.0835H30.666C31.1743 21.0835 31.6619 21.2855 32.0213 21.6449C32.3808 22.0044 32.5827 22.4919 32.5827 23.0002C32.5827 23.5085 32.3808 23.996 32.0213 24.3555C31.6619 24.7149 31.1743 24.9169 30.666 24.9169H15.3327C14.8244 24.9169 14.3368 24.7149 13.9774 24.3555C13.6179 23.996 13.416 23.5085 13.416 23.0002ZM15.3327 28.7828C14.8244 28.7828 14.3368 28.9847 13.9774 29.3442C13.6179 29.7036 13.416 30.1911 13.416 30.6994C13.416 31.2078 13.6179 31.6953 13.9774 32.0547C14.3368 32.4142 14.8244 32.6161 15.3327 32.6161H30.666C31.1743 32.6161 31.6619 32.4142 32.0213 32.0547C32.3808 31.6953 32.5827 31.2078 32.5827 30.6994C32.5827 30.1911 32.3808 29.7036 32.0213 29.3442C31.6619 28.9847 31.1743 28.7828 30.666 28.7828H15.3327Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M42.1663 23.0002C42.1663 33.5859 33.5854 42.1668 22.9997 42.1668C12.4139 42.1668 3.83301 33.5859 3.83301 23.0002C3.83301 12.4144 12.4139 3.8335 22.9997 3.8335C33.5854 3.8335 42.1663 12.4144 42.1663 23.0002ZM38.333 23.0002C38.333 27.0668 36.7175 30.9669 33.842 33.8425C30.9664 36.718 27.0663 38.3335 22.9997 38.3335C18.933 38.3335 15.0329 36.718 12.1574 33.8425C9.28181 30.9669 7.66634 27.0668 7.66634 23.0002C7.66634 18.9335 9.28181 15.0334 12.1574 12.1579C15.0329 9.2823 18.933 7.66683 22.9997 7.66683C27.0663 7.66683 30.9664 9.2823 33.842 12.1579C36.7175 15.0334 38.333 18.9335 38.333 23.0002Z" fill="white"/>
+          </svg>    
+        </div>
       </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about-me">About Me</a></li>
+      </ul>
+    </div>
     </header>
     <main class="container">
       <section id="home">
@@ -47,13 +60,13 @@
           <aside class="profile-connect">
             <h2 class="font-sora">Lets connect</h2>
             <span>
-              <a href="">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <img src="/assets/ig-icon.png" alt="ig-icon" />
               </a>
-              <a href="">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <img src="/assets/x-icon.png" alt="x-icon" />
               </a>
-              <a href="">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <img src="/assets/fb-icon.png" alt="fb-icon" />
               </a>
             </span>
@@ -112,34 +125,38 @@
           <img src="/assets/arrow.png" alt="arrow-project" />
         </span>
         <div>
-          <article>
-            <aside class="wrap-thumb-porto">
-              <img src="/assets/project-1.png" alt="project-1" />
-              <img src="/assets/row.png" alt="row-1" />
-            </aside>
-            <aside class="wrap-info-porto">
-              <p class="font-poppins">Mobile Development</p>
-              <h2 class="font-sora">RCDroid</h2>
-              <p class="font-poppins desc">
-                An application that makes it easier to create car robots using
-                various protocols.
-              </p>
-            </aside>
-          </article>
-          <article>
-            <aside class="wrap-thumb-porto">
-              <img src="/assets/project-2.png" alt="project-2" />
-              <img src="/assets/row.png" alt="row-2" />
-            </aside>
-            <aside class="wrap-info-porto">
-              <p class="font-poppins">Web Development</p>
-              <h2 class="font-sora">IDMEDREC</h2>
-              <p class="font-poppins desc">
-                Blockchain-based medical record application that ensures the security, privacy, and accessibility of your medical data.
-              </p>
-            </aside>
-          </article>
-          <a href="" class="btn-see-more font-poppins">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <article>
+              <aside class="wrap-thumb-porto">
+                <img src="/assets/project-1.png" alt="project-1" />
+                <img src="/assets/row.png" alt="row-1" />
+              </aside>
+              <aside class="wrap-info-porto">
+                <p class="font-poppins">Mobile Development</p>
+                <h2 class="font-sora">RCDroid</h2>
+                <p class="font-poppins desc">
+                  An application that makes it easier to create car robots using
+                  various protocols.
+                </p>
+              </aside>
+            </article>
+          </a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <article>
+              <aside class="wrap-thumb-porto">
+                <img src="/assets/project-2.png" alt="project-2" />
+                <img src="/assets/row.png" alt="row-2" />
+              </aside>
+              <aside class="wrap-info-porto">
+                <p class="font-poppins">Web Development</p>
+                <h2 class="font-sora">IDMEDREC</h2>
+                <p class="font-poppins desc">
+                  Blockchain-based medical record application that ensures the security, privacy, and accessibility of your medical data.
+                </p>
+              </aside>
+            </article>
+          </a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn-see-more font-poppins">
             <img src="/assets/hamburger.png" alt="hamburger" />
             <p>See More</p>
           </a>
