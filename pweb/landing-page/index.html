@@ -123,7 +123,7 @@
         <div class="w-[500px] h-[450px] bg-[#263C28] absolute top-0 -z-1"></div>
         <article class="container mx-auto flex">
           <aside class="mr-16">
-            <img src="assets/menua-bersama.png" alt="menua-bersama" />
+            <img src="assets/menua-bersama.png" class="w-[500px]" alt="menua-bersama" />
           </aside>
           <aside class="text-white">
             <h4 class="mt-4 mb-2 text-lg font-gothic">OUR INTRODUCTION</h4>
@@ -258,9 +258,102 @@
           >
             Explore Our Projects
           </h1>
+<div class="relative w-full overflow-hidden pb-24">
+  <!-- Track -->
+  <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+    <!-- Slide 1 -->
+    <div class="flex justify-evenly min-w-full gap-4">
+      <!-- Card -->
+      <div class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500">
+        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
+          <div>
+            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
+            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
+          </div>
+          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
+        </div>
+      </div>
+      <!-- Copy 3 lagi card -->
+      <div class="w-[315px] h-[350px] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
+        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
+          <div>
+            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
+            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
+          </div>
+          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
+        </div>
+      </div>
+      <div class="w-[315px] h-[350px] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
+        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
+          <div>
+            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
+            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
+          </div>
+          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
+        </div>
+      </div>
+      <div class="w-[315px] h-[350px] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
+        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
+          <div>
+            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
+            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
+          </div>
+          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="flex justify-evenly min-w-full gap-4">
+      <!-- isi lagi 4 card baru -->
+      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
+        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
+          <div>
+            <p class="text-[#F7C35F] font-gothic font-bold text-sm">TECH</p>
+            <h5 class="text-white font-livvic font-semibold text-xl">Smart Farming</h5>
+          </div>
+          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
+        </div>
+      </div>
+      <!-- 3 card tambahan slide 2 -->
+      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative"></div>
+      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative"></div>
+      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative"></div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button id="prev" class="absolute left-0 right-0 translate-y-10 -translate-x-10 bg-[#F7C35F] rounded-full p-2 w-max mx-auto cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <g clip-path="url(#clip0_258_12)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5866 17.4134C10.2121 17.0384 10.0017 16.5301 10.0017 16.0001C10.0017 15.4701 10.2121 14.9618 10.5866 14.5868L18.1279 7.04278C18.5031 6.66776 19.0119 6.45715 19.5424 6.45728C19.8051 6.45734 20.0652 6.50913 20.3078 6.60971C20.5505 6.71028 20.7709 6.85767 20.9566 7.04344C21.1423 7.22922 21.2896 7.44975 21.39 7.69245C21.4905 7.93514 21.5422 8.19525 21.5421 8.45792C21.5421 8.72058 21.4903 8.98066 21.3897 9.22331C21.2891 9.46596 21.1417 9.68642 20.9559 9.87211L14.8293 16.0001L20.9573 22.1281C21.1484 22.3125 21.3009 22.5331 21.4058 22.7771C21.5107 23.0211 21.566 23.2835 21.5684 23.549C21.5709 23.8146 21.5204 24.078 21.42 24.3238C21.3195 24.5696 21.1711 24.793 20.9834 24.9809C20.7957 25.1688 20.5725 25.3174 20.3267 25.418C20.081 25.5187 19.8177 25.5694 19.5521 25.5673C19.2865 25.5651 19.0241 25.51 18.78 25.4053C18.536 25.3006 18.3152 25.1484 18.1306 24.9574L10.5839 17.4134H10.5866Z" fill="#334B35"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_258_12">
+          <rect width="32" height="32" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </button>
+  <button id="next" class="absolute left-0 right-0 translate-y-10 translate-x-10 bg-[#F7C35F] rounded-full p-2 w-max mx-auto cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <g clip-path="url(#clip0_258_12)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4134 17.4134C21.7879 17.0384 21.9983 16.5301 21.9983 16.0001C21.9983 15.4701 21.7879 14.9618 21.4134 14.5868L13.8721 7.04278C13.4969 6.66776 12.9881 6.45715 12.4576 6.45728C12.1949 6.45734 11.9348 6.50913 11.6922 6.60971C11.4495 6.71028 11.2291 6.85767 11.0434 7.04344C10.8577 7.22922 10.7104 7.44975 10.61 7.69245C10.5095 7.93514 10.4578 8.19525 10.4579 8.45792C10.4579 8.72058 10.5097 8.98066 10.6103 9.22331C10.7109 9.46596 10.8583 9.68642 11.0441 9.87211L17.1707 16.0001L11.0427 22.1281C10.8516 22.3125 10.6991 22.5331 10.5942 22.7771C10.4893 23.0211 10.434 23.2835 10.4316 23.549C10.4291 23.8146 10.4796 24.078 10.58 24.3238C10.6805 24.5696 10.8289 24.793 11.0166 24.9809C11.2043 25.1688 11.4275 25.3174 11.6733 25.418C11.919 25.5187 12.1823 25.5694 12.4479 25.5673C12.7135 25.5651 12.9759 25.51 13.22 25.4053C13.464 25.3006 13.6848 25.1484 13.8694 24.9574L21.4161 17.4134H21.4134Z" fill="#334B35"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_258_12">
+          <rect width="32" height="32" fill="white" transform="matrix(-1 0 0 1 32 0)"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </button>
+  <!-- <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2">➡</button> -->
+</div>
         </article>
       </section>
     </main>
     <footer></footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
