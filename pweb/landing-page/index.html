@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Agro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +19,7 @@
     </style>
   </head>
   <body class="bg-[#334B35]">
-    <header class="bg-[#334B35] px-2 py-6">
+    <header class="bg-[#334B35] px-2 py-6 sticky top-0 z-10 duration-300">
       <nav class="container mx-auto flex items-center justify-between">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,16 +71,45 @@
         </svg>
 
         <ul class="flex text-white items-center font-livvic">
-          <li class="mr-12"><a href="">Home</a></li>
-          <li class="mr-12"><a href="">About Us</a></li>
-          <li class="mr-12"><a href="">Our Products</a></li>
-          <li class="mr-12"><a href="">Projects</a></li>
-          <li class="mr-12"><a href="">Services</a></li>
-          <li class="mr-12"><a href="">News</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li
+            class="mr-12 hover:font-semibold transition-all border-b border-[#F7C35F]/0 hover:border-[#F7C35F]"
+          >
+            <a href="#home">Home</a>
+          </li>
+          <li
+            class="mr-12 hover:font-semibold transition-all border-b border-[#F7C35F]/0 hover:border-[#F7C35F]"
+          >
+            <a href="#introduction">About Us</a>
+          </li>
+          <li
+            class="mr-12 hover:font-semibold transition-all border-b border-[#F7C35F]/0 hover:border-[#F7C35F]"
+          >
+            <a href="#products">Our Products</a>
+          </li>
+          <li
+            class="mr-12 hover:font-semibold transition-all border-b border-[#F7C35F]/0 hover:border-[#F7C35F]"
+          >
+            <a href="#projects">Projects</a>
+          </li>
+          <li
+            class="mr-12 hover:font-semibold transition-all border-b border-[#F7C35F]/0 hover:border-[#F7C35F]"
+          >
+            <a href="#services">Services</a>
+          </li>
+          <li
+            class="mr-12 hover:font-semibold transition-all border-b border-[#F7C35F]/0 hover:border-[#F7C35F]"
+          >
+            <a href="#blogs">News</a>
+          </li>
+          <li
+            class="hover:font-semibold transition-all border-b border-[#F7C35F]/0 hover:border-[#F7C35F]"
+          >
+            <a href="#contacts">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section
         id="home"
@@ -112,7 +142,7 @@
             endeavor. In on my jointure horrible margaret suitable he speedily. 
           </p>
           <button
-            class="text-sm bg-[#F7C35F] text-[#1A1A1A] py-4 px-8 rounded-2xl font-livvic font-medium"
+            class="text-sm bg-[#F7C35F] text-[#1A1A1A] py-4 px-8 rounded-2xl font-livvic font-medium hover:bg-[#1A1A1A] hover:text-[#F7C35F] cursor-pointer duration-300"
           >
             DISCOVER MORE
           </button>
@@ -123,7 +153,11 @@
         <div class="w-[500px] h-[450px] bg-[#263C28] absolute top-0 -z-1"></div>
         <article class="container mx-auto flex">
           <aside class="mr-16">
-            <img src="assets/menua-bersama.png" class="w-[500px]" alt="menua-bersama" />
+            <img
+              src="assets/menua-bersama.png"
+              class="w-[500px]"
+              alt="menua-bersama"
+            />
           </aside>
           <aside class="text-white">
             <h4 class="mt-4 mb-2 text-lg font-gothic">OUR INTRODUCTION</h4>
@@ -203,27 +237,39 @@
         </h1>
 
         <article class="flex justify-between">
-          <div class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6">
+          <div
+            class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6 hover:bg-[#F7C35F] hover:text-black duration-300"
+          >
             <img src="assets/apel.png" alt="apple" class="mx-auto mb-5" />
             <p class="text-lg font-semibold font-livvic">Apple</p>
           </div>
-          <div class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6">
+          <div
+            class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6 hover:bg-[#F7C35F] hover:text-black duration-300"
+          >
             <img src="assets/blueberry.png" alt="apple" class="mx-auto mb-5" />
             <p class="text-lg font-semibold font-livvic">Blueberry</p>
           </div>
-          <div class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6">
+          <div
+            class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6 hover:bg-[#F7C35F] hover:text-black duration-300"
+          >
             <img src="assets/strawberry.png" alt="apple" class="mx-auto mb-5" />
             <p class="text-lg font-semibold font-livvic">Strawberry</p>
           </div>
-          <div class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6">
+          <div
+            class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6 hover:bg-[#F7C35F] hover:text-black duration-300"
+          >
             <img src="assets/eggplant.png" alt="apple" class="mx-auto mb-5" />
             <p class="text-lg font-semibold font-livvic">Eggplant</p>
           </div>
-          <div class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6">
+          <div
+            class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6 hover:bg-[#F7C35F] hover:text-black duration-300"
+          >
             <img src="assets/cabbage.png" alt="apple" class="mx-auto mb-5" />
             <p class="text-lg font-semibold font-livvic">Cabbage</p>
           </div>
-          <div class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6">
+          <div
+            class="w-[180px] bg-[#D9D9D9]/10 rounded-2xl py-6 hover:bg-[#F7C35F] hover:text-black duration-300"
+          >
             <img src="assets/carrot.png" alt="apple" class="mx-auto mb-5" />
             <p class="text-lg font-semibold font-livvic">Carrot</p>
           </div>
@@ -248,7 +294,10 @@
         </article>
       </section>
 
-      <section id="projects" class="bg-[#263C28] py-24">
+      <section
+        id="projects"
+        class="bg-[#263C28] bg-[url('assets/rumput-bg.png')] bg-no-repeat bg-bottom py-24"
+      >
         <article class="container mx-auto">
           <h4 class="text-lg mb-3 font-gothic text-center text-white">
             RECENTLY COMPLETED WORK
@@ -258,101 +307,756 @@
           >
             Explore Our Projects
           </h1>
-<div class="relative w-full overflow-hidden pb-24">
-  <!-- Track -->
-  <div id="slider" class="flex transition-transform duration-500 ease-in-out">
-    <!-- Slide 1 -->
-    <div class="flex justify-evenly min-w-full gap-4">
-      <!-- Card -->
-      <div class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500">
-        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
-          <div>
-            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
-            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
-          </div>
-          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
-        </div>
-      </div>
-      <!-- Copy 3 lagi card -->
-      <div class="w-[315px] h-[350px] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
-        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
-          <div>
-            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
-            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
-          </div>
-          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
-        </div>
-      </div>
-      <div class="w-[315px] h-[350px] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
-        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
-          <div>
-            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
-            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
-          </div>
-          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
-        </div>
-      </div>
-      <div class="w-[315px] h-[350px] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
-        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
-          <div>
-            <p class="text-[#F7C35F] font-gothic font-bold text-sm">AGRICULTURE</p>
-            <h5 class="text-white font-livvic font-semibold text-xl">Natural way of agriculture</h5>
-          </div>
-          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
-        </div>
-      </div>
-    </div>
+          <div class="relative w-full overflow-hidden pb-24">
+            <!-- Track -->
+            <div
+              id="slider"
+              class="flex transition-transform duration-500 ease-in-out"
+            >
+              <!-- Slide 1 -->
+              <div class="flex justify-evenly min-w-full gap-4">
+                <!-- Card -->
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+                <!-- Copy 3 lagi card -->
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+              </div>
 
-    <!-- Slide 2 -->
-    <div class="flex justify-evenly min-w-full gap-4">
-      <!-- isi lagi 4 card baru -->
-      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative">
-        <div class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out">
-          <div>
-            <p class="text-[#F7C35F] font-gothic font-bold text-sm">TECH</p>
-            <h5 class="text-white font-livvic font-semibold text-xl">Smart Farming</h5>
-          </div>
-          <img src="assets/arrow-right.png" class="w-[40px]" alt="arrow-right">
-        </div>
-      </div>
-      <!-- 3 card tambahan slide 2 -->
-      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative"></div>
-      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative"></div>
-      <div class="w-[315px] h-[350px] bg-[url('assets/project-2.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative"></div>
-    </div>
-  </div>
+              <!-- Slide 2 -->
+              <div class="flex justify-evenly min-w-full gap-4">
+                <!-- isi lagi 4 card baru -->
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+                <!-- 3 card tambahan slide 2 -->
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[315px] h-[350px] hover:h-[330px] hover:border-2 hover:border-[#F7C35F] bg-[url('assets/project-1.png')] bg-cover rounded-xl flex flex-col justify-end overflow-hidden group relative transition-all duration-500"
+                >
+                  <div
+                    class="flex justify-between items-center px-8 py-6 bg-gradient-to-t from-black/60 to-black/20 group-hover:bottom-0 absolute -bottom-26 transition-all duration-500 ease-in-out"
+                  >
+                    <div>
+                      <p class="text-[#F7C35F] font-gothic font-bold text-sm">
+                        AGRICULTURE
+                      </p>
+                      <h5 class="text-white font-livvic font-semibold text-xl">
+                        Natural way of agriculture
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/arrow-right.png"
+                      class="w-[40px]"
+                      alt="arrow-right"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- Controls -->
-  <button id="prev" class="absolute left-0 right-0 translate-y-10 -translate-x-10 bg-[#F7C35F] rounded-full p-2 w-max mx-auto cursor-pointer">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-      <g clip-path="url(#clip0_258_12)">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5866 17.4134C10.2121 17.0384 10.0017 16.5301 10.0017 16.0001C10.0017 15.4701 10.2121 14.9618 10.5866 14.5868L18.1279 7.04278C18.5031 6.66776 19.0119 6.45715 19.5424 6.45728C19.8051 6.45734 20.0652 6.50913 20.3078 6.60971C20.5505 6.71028 20.7709 6.85767 20.9566 7.04344C21.1423 7.22922 21.2896 7.44975 21.39 7.69245C21.4905 7.93514 21.5422 8.19525 21.5421 8.45792C21.5421 8.72058 21.4903 8.98066 21.3897 9.22331C21.2891 9.46596 21.1417 9.68642 20.9559 9.87211L14.8293 16.0001L20.9573 22.1281C21.1484 22.3125 21.3009 22.5331 21.4058 22.7771C21.5107 23.0211 21.566 23.2835 21.5684 23.549C21.5709 23.8146 21.5204 24.078 21.42 24.3238C21.3195 24.5696 21.1711 24.793 20.9834 24.9809C20.7957 25.1688 20.5725 25.3174 20.3267 25.418C20.081 25.5187 19.8177 25.5694 19.5521 25.5673C19.2865 25.5651 19.0241 25.51 18.78 25.4053C18.536 25.3006 18.3152 25.1484 18.1306 24.9574L10.5839 17.4134H10.5866Z" fill="#334B35"/>
-      </g>
-      <defs>
-        <clipPath id="clip0_258_12">
-          <rect width="32" height="32" fill="white"/>
-        </clipPath>
-      </defs>
-    </svg>
-  </button>
-  <button id="next" class="absolute left-0 right-0 translate-y-10 translate-x-10 bg-[#F7C35F] rounded-full p-2 w-max mx-auto cursor-pointer">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-      <g clip-path="url(#clip0_258_12)">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4134 17.4134C21.7879 17.0384 21.9983 16.5301 21.9983 16.0001C21.9983 15.4701 21.7879 14.9618 21.4134 14.5868L13.8721 7.04278C13.4969 6.66776 12.9881 6.45715 12.4576 6.45728C12.1949 6.45734 11.9348 6.50913 11.6922 6.60971C11.4495 6.71028 11.2291 6.85767 11.0434 7.04344C10.8577 7.22922 10.7104 7.44975 10.61 7.69245C10.5095 7.93514 10.4578 8.19525 10.4579 8.45792C10.4579 8.72058 10.5097 8.98066 10.6103 9.22331C10.7109 9.46596 10.8583 9.68642 11.0441 9.87211L17.1707 16.0001L11.0427 22.1281C10.8516 22.3125 10.6991 22.5331 10.5942 22.7771C10.4893 23.0211 10.434 23.2835 10.4316 23.549C10.4291 23.8146 10.4796 24.078 10.58 24.3238C10.6805 24.5696 10.8289 24.793 11.0166 24.9809C11.2043 25.1688 11.4275 25.3174 11.6733 25.418C11.919 25.5187 12.1823 25.5694 12.4479 25.5673C12.7135 25.5651 12.9759 25.51 13.22 25.4053C13.464 25.3006 13.6848 25.1484 13.8694 24.9574L21.4161 17.4134H21.4134Z" fill="#334B35"/>
-      </g>
-      <defs>
-        <clipPath id="clip0_258_12">
-          <rect width="32" height="32" fill="white" transform="matrix(-1 0 0 1 32 0)"/>
-        </clipPath>
-      </defs>
-    </svg>
-  </button>
-  <!-- <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2">➡</button> -->
-</div>
+            <!-- Controls -->
+            <button
+              id="prev"
+              class="absolute left-0 right-0 translate-y-10 -translate-x-10 bg-[#F7C35F] rounded-full p-2 w-max mx-auto cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_258_12)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.5866 17.4134C10.2121 17.0384 10.0017 16.5301 10.0017 16.0001C10.0017 15.4701 10.2121 14.9618 10.5866 14.5868L18.1279 7.04278C18.5031 6.66776 19.0119 6.45715 19.5424 6.45728C19.8051 6.45734 20.0652 6.50913 20.3078 6.60971C20.5505 6.71028 20.7709 6.85767 20.9566 7.04344C21.1423 7.22922 21.2896 7.44975 21.39 7.69245C21.4905 7.93514 21.5422 8.19525 21.5421 8.45792C21.5421 8.72058 21.4903 8.98066 21.3897 9.22331C21.2891 9.46596 21.1417 9.68642 20.9559 9.87211L14.8293 16.0001L20.9573 22.1281C21.1484 22.3125 21.3009 22.5331 21.4058 22.7771C21.5107 23.0211 21.566 23.2835 21.5684 23.549C21.5709 23.8146 21.5204 24.078 21.42 24.3238C21.3195 24.5696 21.1711 24.793 20.9834 24.9809C20.7957 25.1688 20.5725 25.3174 20.3267 25.418C20.081 25.5187 19.8177 25.5694 19.5521 25.5673C19.2865 25.5651 19.0241 25.51 18.78 25.4053C18.536 25.3006 18.3152 25.1484 18.1306 24.9574L10.5839 17.4134H10.5866Z"
+                    fill="#334B35"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_12">
+                    <rect width="32" height="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button
+              id="next"
+              class="absolute left-0 right-0 translate-y-10 translate-x-10 bg-[#F7C35F] rounded-full p-2 w-max mx-auto cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_258_12)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.4134 17.4134C21.7879 17.0384 21.9983 16.5301 21.9983 16.0001C21.9983 15.4701 21.7879 14.9618 21.4134 14.5868L13.8721 7.04278C13.4969 6.66776 12.9881 6.45715 12.4576 6.45728C12.1949 6.45734 11.9348 6.50913 11.6922 6.60971C11.4495 6.71028 11.2291 6.85767 11.0434 7.04344C10.8577 7.22922 10.7104 7.44975 10.61 7.69245C10.5095 7.93514 10.4578 8.19525 10.4579 8.45792C10.4579 8.72058 10.5097 8.98066 10.6103 9.22331C10.7109 9.46596 10.8583 9.68642 11.0441 9.87211L17.1707 16.0001L11.0427 22.1281C10.8516 22.3125 10.6991 22.5331 10.5942 22.7771C10.4893 23.0211 10.434 23.2835 10.4316 23.549C10.4291 23.8146 10.4796 24.078 10.58 24.3238C10.6805 24.5696 10.8289 24.793 11.0166 24.9809C11.2043 25.1688 11.4275 25.3174 11.6733 25.418C11.919 25.5187 12.1823 25.5694 12.4479 25.5673C12.7135 25.5651 12.9759 25.51 13.22 25.4053C13.464 25.3006 13.6848 25.1484 13.8694 24.9574L21.4161 17.4134H21.4134Z"
+                    fill="#334B35"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_258_12">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="matrix(-1 0 0 1 32 0)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
         </article>
       </section>
+      <section id="testimonials" class="container mx-auto py-24">
+        <h3 class="text-lg mb-3 font-gothic text-center text-white">
+          OUR TESTIMONIALS
+        </h3>
+        <h1
+          class="text-4xl font-livvic font-semibold mb-16 text-center text-white"
+        >
+          WHAT THEY’RE TAKING ABOUT
+        </h1>
+        <div class="relative overflow-hidden mx-auto">
+          <div id="slider-testi" class="flex transition-transform duration-700">
+            <!-- Slide 1 -->
+            <article class="flex items-center justify-center min-w-full px-8">
+              <aside>
+                <img src="assets/profile.png" alt="profile" class="w-[280px]" />
+              </aside>
+              <aside class="text-white ml-16">
+                <p class="w-[680px] font-gothic mb-8">
+                  “Lorem ipsum dolor sit amet consectetur. Tortor tempus cursus
+                  leo dictumst elementum. Sagittis elit turpis dignissim turpis
+                  tristique venenatis. Tempor id commodo odio nunc id volutpat
+                  libero. Ut hendrerit malesuada netus sapien dictum sapien
+                  nibh. Cras laoreet risus mus mi commodo volutpat quis neque.
+                  Scelerisque at in in id donec ornare velit. Posuere amet
+                  lobortis volutpat purus mauris. Tortor magna non turpis
+                  ultricies iaculis rhoncus. Volutpat lectus proin pellentesque
+                  platea.”
+                </p>
+                <p class="text-lg font-semibold mb-1">Tyrese Gibson</p>
+                <p class="text-sm text-[#ACACAC]">Customer</p>
+              </aside>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="flex items-center justify-center min-w-full px-8">
+              <aside>
+                <img src="assets/profile.png" alt="profile" class="w-[280px]" />
+              </aside>
+              <aside class="text-white ml-16">
+                <p class="w-[680px] font-gothic mb-8">
+                  “Slide kedua berisi testimoni lain dengan konten berbeda...”
+                </p>
+                <p class="text-lg font-semibold mb-1">Michelle Rodriguez</p>
+                <p class="text-sm text-[#ACACAC]">Client</p>
+              </aside>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="flex items-center justify-center min-w-full px-8">
+              <aside>
+                <img src="assets/profile.png" alt="profile" class="w-[280px]" />
+              </aside>
+              <aside class="text-white ml-16">
+                <p class="w-[680px] font-gothic mb-8">
+                  “Slide ketiga juga bisa diisi testimoni atau konten
+                  lainnya...”
+                </p>
+                <p class="text-lg font-semibold mb-1">Paul Walker</p>
+                <p class="text-sm text-[#ACACAC]">Subscriber</p>
+              </aside>
+            </article>
+          </div>
+
+          <!-- Indicator -->
+          <div id="indicators" class="flex justify-center mt-6 gap-2">
+            <span class="w-3 h-3 rounded-full bg-[#F7C35F] opacity-100"></span>
+            <span class="w-3 h-3 rounded-full bg-[#F7C35F] opacity-40"></span>
+            <span class="w-3 h-3 rounded-full bg-[#F7C35F] opacity-40"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="flex items-center bg-[#6D8C54]">
+        <img
+          src="assets/nandur.png"
+          class="w-[750px] h-[500px] object-cover"
+          alt="nandur"
+        />
+        <aside class="pl-16 text-white">
+          <h4 class="text-lg font-gothic mb-2">MODERN AGRICULTURE</h4>
+          <h2 class="text-4xl font-livvic font-bold w-[400px] leading-11 mb-10">
+            Providing High Quality Products
+          </h2>
+          <div class="flex items-center pb-10 border-b border-white/40">
+            <img src="assets/grow-icon.png" alt="grow" class="w-[70px] mr-6" />
+            <div>
+              <p class="text-lg font-livvic font-semibold mb-1">
+                Our Agriculture Growth
+              </p>
+              <p class="text-sm text-white/80">
+                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                arcu. Metus elit auctor
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center pt-10">
+            <img
+              src="assets/healthly-icon.png"
+              alt="grow"
+              class="w-[70px] mr-6"
+            />
+            <div>
+              <p class="text-lg font-livvic font-semibold mb-1">
+                Making Healthy Foods
+              </p>
+              <p class="text-sm text-white/80">
+                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                arcu. Metus elit auctor
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section
+        id="blogs"
+        class="bg-[#263C28] bg-[url('assets/bg-blog.png')] bg-center object-cover pt-28"
+      >
+        <article class="container mx-auto">
+          <h4 class="text-lg mb-3 font-gothic text-center text-white">
+            FROM THE BLOG
+          </h4>
+          <h1
+            class="text-4xl font-livvic font-semibold text-center text-white -mb-26"
+          >
+            News & Articles
+          </h1>
+          <div class="flex justify-evenly translate-y-46">
+            <div class="w-[400px] bg-[#2D442F] rounded-xl overflow-hidden">
+              <div class="relative">
+                <img
+                  src="assets/thumb-blog-1.png"
+                  class="w-full h-[300px] object-cover"
+                  alt="thumb-1"
+                />
+                <p
+                  class="absolute right-0 bottom-0 bg-[#F7C35F] py-2 px-4 rounded-tl-xl font-livvic font-medium"
+                >
+                  3 Sep, 2023
+                </p>
+              </div>
+              <div class="text-white p-6">
+                <div class="flex font-livvic text-white/70 mb-4">
+                  <span class="flex items-center mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      class="mr-3"
+                    >
+                      <path
+                        d="M17.1066 17.5V15.8333C17.1066 14.9493 16.7554 14.1014 16.1303 13.4763C15.5052 12.8512 14.6573 12.5 13.7733 12.5H7.10661C6.22255 12.5 5.37471 12.8512 4.74958 13.4763C4.12446 14.1014 3.77327 14.9493 3.77327 15.8333V17.5"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.4399 9.16667C12.2809 9.16667 13.7733 7.67428 13.7733 5.83333C13.7733 3.99238 12.2809 2.5 10.4399 2.5C8.59899 2.5 7.10661 3.99238 7.10661 5.83333C7.10661 7.67428 8.59899 9.16667 10.4399 9.16667Z"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    by Kevin Marlin</span
+                  >
+                  <span class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      class="mr-3"
+                    >
+                      <path
+                        d="M17.9399 9.58336C17.9428 10.6832 17.6858 11.7683 17.1899 12.75C16.602 13.9265 15.6981 14.916 14.5795 15.6078C13.4609 16.2995 12.1718 16.6662 10.8566 16.6667C9.75672 16.6696 8.6717 16.4126 7.68994 15.9167L2.93994 17.5L4.52327 12.75C4.02738 11.7683 3.77041 10.6832 3.77327 9.58336C3.77378 8.26815 4.14045 6.97907 4.83221 5.86048C5.52396 4.7419 6.51349 3.838 7.68994 3.25002C8.6717 2.75413 9.75672 2.49716 10.8566 2.50002H11.2733C13.0102 2.59585 14.6508 3.32899 15.8809 4.55907C17.111 5.78915 17.8441 7.42973 17.9399 9.16669V9.58336Z"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 Comments</span
+                  >
+                </div>
+                <h3 class="font-livvic text-xl font-semibold">
+                  Taking seamless key indicators offline to
+                </h3>
+              </div>
+            </div>
+            <div class="w-[400px] bg-[#2D442F] rounded-xl overflow-hidden">
+              <div class="relative">
+                <img
+                  src="assets/thumb-blog-1.png"
+                  class="w-full h-[300px] object-cover"
+                  alt="thumb-1"
+                />
+                <p
+                  class="absolute right-0 bottom-0 bg-[#F7C35F] py-2 px-4 rounded-tl-xl font-livvic font-medium"
+                >
+                  3 Sep, 2023
+                </p>
+              </div>
+              <div class="text-white p-6">
+                <div class="flex font-livvic text-white/70 mb-4">
+                  <span class="flex items-center mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      class="mr-3"
+                    >
+                      <path
+                        d="M17.1066 17.5V15.8333C17.1066 14.9493 16.7554 14.1014 16.1303 13.4763C15.5052 12.8512 14.6573 12.5 13.7733 12.5H7.10661C6.22255 12.5 5.37471 12.8512 4.74958 13.4763C4.12446 14.1014 3.77327 14.9493 3.77327 15.8333V17.5"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.4399 9.16667C12.2809 9.16667 13.7733 7.67428 13.7733 5.83333C13.7733 3.99238 12.2809 2.5 10.4399 2.5C8.59899 2.5 7.10661 3.99238 7.10661 5.83333C7.10661 7.67428 8.59899 9.16667 10.4399 9.16667Z"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    by Kevin Marlin</span
+                  >
+                  <span class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      class="mr-3"
+                    >
+                      <path
+                        d="M17.9399 9.58336C17.9428 10.6832 17.6858 11.7683 17.1899 12.75C16.602 13.9265 15.6981 14.916 14.5795 15.6078C13.4609 16.2995 12.1718 16.6662 10.8566 16.6667C9.75672 16.6696 8.6717 16.4126 7.68994 15.9167L2.93994 17.5L4.52327 12.75C4.02738 11.7683 3.77041 10.6832 3.77327 9.58336C3.77378 8.26815 4.14045 6.97907 4.83221 5.86048C5.52396 4.7419 6.51349 3.838 7.68994 3.25002C8.6717 2.75413 9.75672 2.49716 10.8566 2.50002H11.2733C13.0102 2.59585 14.6508 3.32899 15.8809 4.55907C17.111 5.78915 17.8441 7.42973 17.9399 9.16669V9.58336Z"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 Comments</span
+                  >
+                </div>
+                <h3 class="font-livvic text-xl font-semibold">
+                  Taking seamless key indicators offline to
+                </h3>
+              </div>
+            </div>
+            <div class="w-[400px] bg-[#2D442F] rounded-xl overflow-hidden">
+              <div class="relative">
+                <img
+                  src="assets/thumb-blog-1.png"
+                  class="w-full h-[300px] object-cover"
+                  alt="thumb-1"
+                />
+                <p
+                  class="absolute right-0 bottom-0 bg-[#F7C35F] py-2 px-4 rounded-tl-xl font-livvic font-medium"
+                >
+                  3 Sep, 2023
+                </p>
+              </div>
+              <div class="text-white p-6">
+                <div class="flex font-livvic text-white/70 mb-4">
+                  <span class="flex items-center mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      class="mr-3"
+                    >
+                      <path
+                        d="M17.1066 17.5V15.8333C17.1066 14.9493 16.7554 14.1014 16.1303 13.4763C15.5052 12.8512 14.6573 12.5 13.7733 12.5H7.10661C6.22255 12.5 5.37471 12.8512 4.74958 13.4763C4.12446 14.1014 3.77327 14.9493 3.77327 15.8333V17.5"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.4399 9.16667C12.2809 9.16667 13.7733 7.67428 13.7733 5.83333C13.7733 3.99238 12.2809 2.5 10.4399 2.5C8.59899 2.5 7.10661 3.99238 7.10661 5.83333C7.10661 7.67428 8.59899 9.16667 10.4399 9.16667Z"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    by Kevin Marlin</span
+                  >
+                  <span class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      class="mr-3"
+                    >
+                      <path
+                        d="M17.9399 9.58336C17.9428 10.6832 17.6858 11.7683 17.1899 12.75C16.602 13.9265 15.6981 14.916 14.5795 15.6078C13.4609 16.2995 12.1718 16.6662 10.8566 16.6667C9.75672 16.6696 8.6717 16.4126 7.68994 15.9167L2.93994 17.5L4.52327 12.75C4.02738 11.7683 3.77041 10.6832 3.77327 9.58336C3.77378 8.26815 4.14045 6.97907 4.83221 5.86048C5.52396 4.7419 6.51349 3.838 7.68994 3.25002C8.6717 2.75413 9.75672 2.49716 10.8566 2.50002H11.2733C13.0102 2.59585 14.6508 3.32899 15.8809 4.55907C17.111 5.78915 17.8441 7.42973 17.9399 9.16669V9.58336Z"
+                        stroke="#F7C35F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 Comments</span
+                  >
+                </div>
+                <h3 class="font-livvic text-xl font-semibold">
+                  Taking seamless key indicators offline to
+                </h3>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section
+        id="contacts"
+        class="container mx-auto pt-70 pb-26 flex items-center justify-evenly text-white"
+      >
+        <aside>
+          <p class="text-lg mb-3 font-gothic text-white">CONTACT NOW</p>
+          <h2 class="text-4xl font-livvic font-semibold mb-10 text-white">
+            GET IN TOUCH NOW
+          </h2>
+          <p class="font-gothic text-white/80 w-[490px] mb-10">
+            Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea
+            dictumst. Duis porta,quam ut finibus ultrices.
+          </p>
+          <p class="text-sm text-white/80 mb-2">PHONE</p>
+          <p class="mb-2">+880123456789</p>
+          <p class="mb-6">+880987654321</p>
+          <p class="text-sm text-white/80 mb-2">Email</p>
+          <p class="mb-6">needhelp@company.com</p>
+          <p class="text-sm text-white/80 mb-2">Address</p>
+          <p>Road No. 8, Niketan, Dhaka, Bangladesh</p>
+        </aside>
+        <aside class="w-[450px] font-livvic">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full bg-[#263C28] rounded-lg px-6 py-4 mb-6"
+          />
+          <input
+            type="text"
+            placeholder="Phone Number"
+            class="w-full bg-[#263C28] rounded-lg px-6 py-4 mb-6"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full bg-[#263C28] rounded-lg px-6 py-4 mb-6"
+          />
+          <textarea
+            rows="6"
+            cols=""
+            placeholder="Your Message"
+            class="w-full bg-[#263C28] rounded-lg px-6 py-4 mb-6"
+          ></textarea>
+          <button
+            class="text-sm bg-[#F7C35F] text-[#1A1A1A] py-4 px-8 rounded-2xl font-livvic font-medium hover:bg-[#1A1A1A] hover:text-[#F7C35F] cursor-pointer duration-300"
+          >
+            SEND MESSAGE
+          </button>
+        </aside>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <article
+        class="bg-[linear-gradient(to_right,rgba(248,204,119,1),rgba(248,204,119,0.2)),url('assets/leader-bg.png')] bg-center bg-cover py-24"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <aside class="flex items-center">
+            <img src="assets/grow-icon.png" alt="" class="w-[70px] mr-14" />
+            <img src="assets/we-are-leader-text.png" alt="" />
+          </aside>
+          <aside>
+            <button
+              class="text-sm bg-[#F7C35F] text-[#1A1A1A] py-4 px-8 rounded-2xl font-livvic font-medium hover:bg-[#1A1A1A] hover:text-[#F7C35F] cursor-pointer duration-300"
+            >
+              DISCOVER MORE
+            </button>
+          </aside>
+        </div>
+      </article>
+
+      <article class="container mx-auto flex justify-between text-white py-20">
+        <aside>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="144"
+            height="22"
+            viewBox="0 0 144 22"
+            fill="none"
+          >
+            <path
+              d="M13.524 11.8694C13.524 12.5149 13.4386 13.0841 13.2677 13.5769C13.1039 14.0697 12.8688 14.4966 12.5626 14.8575C12.2635 15.2185 11.9074 15.5204 11.4944 15.7634C11.0813 16.0063 10.6291 16.2007 10.1377 16.3464C9.65341 16.4922 9.13709 16.5963 8.58872 16.6588C8.04748 16.7212 7.49555 16.7525 6.93294 16.7525C6.19229 16.7525 5.50861 16.697 4.8819 16.5859C4.25519 16.4818 3.6641 16.3152 3.10861 16.0861C2.56024 15.8501 2.02967 15.5482 1.51691 15.1803C1.01128 14.8124 0.505638 14.3647 0 13.8372L2.17923 11.682C2.37864 12.1609 2.65282 12.6051 3.00178 13.0147C3.35074 13.4173 3.73175 13.7643 4.14481 14.0558C4.56499 14.3474 4.99941 14.5764 5.44807 14.743C5.89674 14.9096 6.32048 14.9929 6.71929 14.9929C7.18932 14.9929 7.63086 14.9617 8.04392 14.8992C8.45697 14.8298 8.81662 14.7187 9.12285 14.566C9.42908 14.4133 9.66766 14.212 9.83858 13.9621C10.0166 13.7053 10.1056 13.386 10.1056 13.0043C10.1056 12.7127 10.038 12.4628 9.90267 12.2546C9.76736 12.0464 9.58932 11.8694 9.36855 11.7236C9.1549 11.5709 8.9092 11.4425 8.63145 11.3384C8.35371 11.2343 8.06884 11.1475 7.77685 11.0781C7.49199 11.0017 7.21068 10.9358 6.93294 10.8803C6.65519 10.8178 6.4095 10.7553 6.19585 10.6929C5.77567 10.5749 5.33769 10.4499 4.8819 10.318C4.42611 10.1792 3.97745 10.023 3.53591 9.8495C3.09436 9.67597 2.67418 9.47815 2.27537 9.25603C1.88368 9.02698 1.53828 8.75974 1.23917 8.45433C0.940059 8.14198 0.701484 7.78451 0.523442 7.38192C0.345401 6.97239 0.25638 6.50386 0.25638 5.97634C0.25638 5.34469 0.334718 4.78593 0.491395 4.30005C0.655193 3.80722 0.883086 3.38034 1.17507 3.0194C1.46706 2.65846 1.81246 2.35652 2.21128 2.11358C2.61009 1.8637 3.04807 1.66588 3.52522 1.52011C4.00237 1.36741 4.50801 1.25982 5.04214 1.19735C5.58338 1.12794 6.13531 1.09323 6.69792 1.09323C7.46706 1.09323 8.16499 1.16264 8.79169 1.30147C9.42552 1.44029 10.0095 1.63811 10.5436 1.89494C11.0777 2.15176 11.5656 2.46064 12.0071 2.82158C12.4558 3.17558 12.876 3.57123 13.2677 4.00852L11.0884 6.16375C10.9175 5.66398 10.6789 5.21281 10.3727 4.81022C10.0736 4.40764 9.73887 4.06405 9.36855 3.77946C8.99822 3.48793 8.61009 3.26581 8.20415 3.11311C7.79822 2.95346 7.40653 2.87364 7.02908 2.87364C6.53769 2.87364 6.08546 2.90834 5.6724 2.97776C5.25935 3.04023 4.90326 3.14781 4.60415 3.30052C4.31217 3.44628 4.08427 3.64758 3.92047 3.9044C3.75668 4.15428 3.67478 4.46663 3.67478 4.84146C3.67478 5.13993 3.73531 5.39328 3.85638 5.60151C3.97745 5.80975 4.13769 5.98675 4.33709 6.13251C4.54362 6.27828 4.77507 6.39975 5.03145 6.49692C5.28783 6.58716 5.55134 6.66698 5.82196 6.73639C6.0997 6.80581 6.37033 6.86828 6.63383 6.9238C6.90445 6.97239 7.15015 7.02792 7.37092 7.09039C7.79822 7.20839 8.24688 7.33333 8.71691 7.46522C9.18694 7.5971 9.64985 7.75327 10.1056 7.93374C10.5614 8.10727 10.9958 8.30857 11.4089 8.53762C11.822 8.76668 12.1852 9.04086 12.4985 9.36015C12.8119 9.6725 13.0611 10.0369 13.2463 10.4534C13.4315 10.8629 13.524 11.3349 13.524 11.8694Z"
+              fill="white"
+            />
+            <path
+              d="M34.857 9.43303C34.857 10.259 34.7573 11.1197 34.5579 12.0151C34.3585 12.9106 34.0772 13.7851 33.7139 14.6389C33.3579 15.4857 32.927 16.2874 32.4214 17.044C31.9157 17.8006 31.3531 18.4565 30.7335 19.0118L29.3769 18.2934C29.5834 17.9325 29.7721 17.5264 29.943 17.0752C30.1139 16.6241 30.2706 16.1486 30.4131 15.6488C30.5555 15.1491 30.6801 14.6354 30.7869 14.1079C30.8938 13.5804 30.9828 13.0563 31.054 12.5357C31.1323 12.0082 31.1893 11.498 31.2249 11.0052C31.2605 10.5124 31.2783 10.0508 31.2783 9.62044C31.2783 9.3775 31.2712 9.11374 31.257 8.82915C31.2427 8.54457 31.2107 8.25998 31.1608 7.97539C31.1181 7.6908 31.0504 7.4201 30.9579 7.16327C30.8653 6.89951 30.7371 6.66698 30.5733 6.46569C30.4166 6.25745 30.2172 6.09434 29.9751 5.97634C29.7401 5.8514 29.4552 5.78893 29.1205 5.78893C28.7929 5.78893 28.5116 5.87569 28.2766 6.04922C28.0487 6.21581 27.8528 6.43445 27.689 6.70516C27.5252 6.97586 27.3935 7.28127 27.2938 7.62139C27.2012 7.96151 27.13 8.30509 27.0801 8.65215C27.0303 8.99227 26.9947 9.3185 26.9733 9.63086C26.9591 9.94321 26.9519 10.207 26.9519 10.4221V16.4505H23.3519V10.849C23.3519 10.6061 23.3555 10.3146 23.3626 9.97444C23.3697 9.62739 23.3591 9.26645 23.3306 8.89162C23.3092 8.5168 23.2629 8.14545 23.1917 7.77757C23.1276 7.40274 23.0208 7.06957 22.8712 6.77804C22.7288 6.48651 22.5329 6.25051 22.2837 6.07004C22.0344 5.88263 21.7211 5.78893 21.3436 5.78893C21.0231 5.78893 20.7525 5.87569 20.5318 6.04922C20.3181 6.22275 20.1365 6.44834 19.9869 6.72598C19.8445 6.99669 19.7306 7.30557 19.6451 7.65263C19.5668 7.99274 19.5062 8.33633 19.4635 8.68339C19.4279 9.02351 19.4065 9.34974 19.3994 9.66209C19.3923 9.9675 19.3887 10.2209 19.3887 10.4221V16.4505H15.7674V4.42499H17.1561L18.4807 7.22575C18.7798 6.25398 19.2499 5.4974 19.8908 4.95599C20.5389 4.40764 21.397 4.13346 22.4653 4.13346C23.4267 4.13346 24.2243 4.32781 24.8582 4.71652C25.492 5.10522 25.9905 5.73687 26.3537 6.61145C26.5602 6.22969 26.7881 5.8861 27.0374 5.58069C27.2938 5.27528 27.5751 5.01499 27.8813 4.79981C28.1947 4.58463 28.5401 4.42152 28.9175 4.31046C29.295 4.19246 29.7116 4.13346 30.1674 4.13346C31.0077 4.13346 31.7234 4.26881 32.3145 4.53952C32.9128 4.80328 33.4006 5.17116 33.778 5.64316C34.1555 6.11516 34.4297 6.67739 34.6006 7.32986C34.7715 7.97539 34.857 8.67645 34.857 9.43303Z"
+              fill="white"
+            />
+            <path
+              d="M49.6843 16.4505H46.0736V15.0137C45.6463 15.5829 45.13 16.0063 44.5246 16.284C43.9264 16.5547 43.2677 16.69 42.5484 16.69C41.6083 16.69 40.768 16.5269 40.0273 16.2007C39.2866 15.8744 38.6599 15.4302 38.1472 14.868C37.6344 14.2988 37.2427 13.6324 36.9721 12.8689C36.7015 12.1054 36.5662 11.2863 36.5662 10.4117C36.5662 9.53715 36.7015 8.71809 36.9721 7.95457C37.2427 7.19104 37.6344 6.52816 38.1472 5.96593C38.6599 5.39675 39.2866 4.94905 40.0273 4.62281C40.768 4.29658 41.6083 4.13346 42.5484 4.13346C43.0255 4.13346 43.4777 4.20287 43.905 4.34169C44.3395 4.48052 44.7347 4.67834 45.0908 4.93516C45.454 5.18504 45.7709 5.49046 46.0415 5.8514C46.3193 6.20539 46.5365 6.60104 46.6932 7.03833L48.2956 4.42499H49.6843V16.4505ZM46.0522 10.4117C46.0522 10.0994 46.0344 9.76968 45.9988 9.42262C45.9703 9.07556 45.9169 8.73198 45.8386 8.39186C45.7602 8.05174 45.6499 7.72898 45.5074 7.42357C45.3721 7.11122 45.1941 6.83704 44.9733 6.60104C44.7596 6.3581 44.4997 6.16722 44.1935 6.0284C43.8872 5.88957 43.5312 5.82016 43.1252 5.82016C42.7193 5.82016 42.3668 5.89304 42.0677 6.03881C41.7685 6.17763 41.5122 6.36851 41.2985 6.61145C41.0849 6.84745 40.9068 7.12163 40.7644 7.43398C40.6291 7.74633 40.5223 8.07257 40.4439 8.41268C40.3656 8.7528 40.3086 9.09639 40.273 9.44345C40.2445 9.78356 40.2303 10.1063 40.2303 10.4117C40.2303 10.7171 40.2445 11.0434 40.273 11.3904C40.3086 11.7375 40.3656 12.0811 40.4439 12.4212C40.5223 12.7613 40.6291 13.0876 40.7644 13.3999C40.9068 13.7123 41.0849 13.9899 41.2985 14.2328C41.5122 14.4688 41.7685 14.6597 42.0677 14.8055C42.3668 14.9443 42.7193 15.0137 43.1252 15.0137C43.4955 15.0137 43.8231 14.9408 44.108 14.7951C44.4 14.6424 44.6528 14.4411 44.8665 14.1912C45.0872 13.9413 45.2724 13.6567 45.422 13.3374C45.5715 13.0181 45.6926 12.6884 45.7852 12.3483C45.8777 12.0082 45.9454 11.6716 45.9881 11.3384C46.0309 10.9983 46.0522 10.6894 46.0522 10.4117Z"
+              fill="white"
+            />
+            <path
+              d="M63.1976 5.48699L61.168 8.76668C61.0825 8.48904 60.9721 8.17668 60.8368 7.82963C60.7015 7.48257 60.5341 7.1598 60.3347 6.86133C60.1353 6.55592 59.8967 6.30257 59.619 6.10128C59.3412 5.89304 59.0208 5.78893 58.6576 5.78893C58.3228 5.78893 58.0309 5.87222 57.7816 6.03881C57.5395 6.20539 57.3329 6.42404 57.162 6.69475C56.9911 6.95851 56.8487 7.26045 56.7347 7.60057C56.6279 7.93374 56.5424 8.27386 56.4783 8.62092C56.4214 8.96103 56.3822 9.29074 56.3608 9.61003C56.3395 9.92239 56.3288 10.1931 56.3288 10.4221V16.4505H52.7074V4.42499H54.0961L55.5596 7.22575C55.7591 6.77457 55.9869 6.36157 56.2433 5.98675C56.4997 5.60498 56.7953 5.27875 57.13 5.00805C57.4647 4.7304 57.8421 4.51522 58.2623 4.36252C58.6896 4.20981 59.1703 4.13346 59.7045 4.13346C59.9822 4.13346 60.292 4.15775 60.6338 4.20634C60.9757 4.24799 61.3104 4.32434 61.638 4.4354C61.9656 4.53952 62.2682 4.67834 62.546 4.85187C62.8237 5.0254 63.041 5.2371 63.1976 5.48699Z"
+              fill="white"
+            />
+            <path
+              d="M69.3614 16.4505H65.7401V5.82016H63.4967V4.42499H65.7401V0H69.3614V4.42499H73.1003V5.82016H69.3614V16.4505Z"
+              fill="white"
+            />
+            <path
+              d="M95.854 9.27686V9.47468C95.8398 10.0577 95.7757 10.6616 95.6617 11.2863C95.5549 11.911 95.4018 12.5357 95.2024 13.1604C95.003 13.7851 94.7644 14.4029 94.4866 15.0137C94.2089 15.6245 93.8956 16.2076 93.5466 16.7629C93.2048 17.3251 92.8344 17.8492 92.4356 18.3351C92.0368 18.8279 91.6166 19.2617 91.1751 19.6365L89.5834 18.7411C89.8326 18.3316 90.057 17.8839 90.2564 17.398C90.4629 16.9191 90.6481 16.4158 90.8119 15.8883C90.9757 15.3608 91.1145 14.8194 91.2285 14.2641C91.3496 13.7088 91.4493 13.157 91.5276 12.6086C91.6059 12.0603 91.6629 11.5223 91.6985 10.9948C91.7412 10.4603 91.7626 9.95362 91.7626 9.47468C91.7626 9.09986 91.7591 8.67645 91.7519 8.20445C91.7519 7.72551 91.7234 7.23963 91.6665 6.74681C91.6166 6.25398 91.5312 5.77504 91.4101 5.30999C91.289 4.83799 91.1074 4.41805 90.8653 4.05017C90.6303 3.68228 90.324 3.38728 89.9466 3.16517C89.5763 2.94305 89.1134 2.83199 88.5579 2.83199C88.0665 2.83199 87.6427 2.91529 87.2867 3.08187C86.9377 3.24152 86.6386 3.46017 86.3893 3.73781C86.1472 4.00852 85.9513 4.32434 85.8018 4.68528C85.6593 5.04622 85.5454 5.42799 85.4599 5.83057C85.3816 6.22622 85.3282 6.62881 85.2997 7.03833C85.2783 7.44092 85.2677 7.82268 85.2677 8.18363V11.0885H89.8718V12.8064H85.2677V16.4505H81.0267V8.82915C81.0267 7.73939 81.2048 6.72598 81.5608 5.78893C81.9169 4.85187 82.419 4.03975 83.0671 3.35258C83.7223 2.65846 84.5056 2.11705 85.4172 1.72835C86.3359 1.3327 87.3579 1.13488 88.4831 1.13488C89.2451 1.13488 89.9573 1.24247 90.6196 1.45764C91.289 1.66588 91.8979 1.95741 92.4463 2.33223C92.9947 2.70011 93.4825 3.14087 93.9098 3.65452C94.3442 4.16122 94.7039 4.71652 94.9887 5.3204C95.2807 5.92428 95.5015 6.56286 95.651 7.23616C95.8006 7.90945 95.8683 8.58968 95.854 9.27686Z"
+              fill="white"
+            />
+            <path
+              d="M110.703 15.0033C110.703 15.9612 110.557 16.8635 110.265 17.7104C109.973 18.5572 109.549 19.2964 108.993 19.9281C108.438 20.5667 107.754 21.0699 106.942 21.4378C106.138 21.8126 105.219 22 104.186 22C103.617 22 103.04 21.9375 102.456 21.8126C101.879 21.6876 101.331 21.4933 100.811 21.2295C100.298 20.9727 99.835 20.643 99.422 20.2404C99.016 19.8448 98.6955 19.3762 98.4605 18.8348L100.02 18.2622C100.155 18.6023 100.33 18.9147 100.544 19.1992C100.764 19.4838 101.017 19.7268 101.302 19.9281C101.587 20.1363 101.9 20.2959 102.242 20.407C102.584 20.525 102.944 20.584 103.321 20.584C104.033 20.584 104.628 20.4417 105.105 20.1571C105.589 19.8725 105.977 19.5012 106.269 19.0431C106.561 18.5849 106.772 18.0644 106.9 17.4813C107.028 16.9052 107.092 16.3187 107.092 15.7217V15.0137C106.665 15.5829 106.148 16.0063 105.543 16.284C104.945 16.5547 104.286 16.69 103.567 16.69C102.627 16.69 101.786 16.5269 101.046 16.2007C100.305 15.8744 99.6783 15.4302 99.1656 14.868C98.6528 14.2988 98.2611 13.6324 97.9905 12.8689C97.7199 12.1054 97.5846 11.2863 97.5846 10.4117C97.5846 9.53715 97.7199 8.71809 97.9905 7.95457C98.2611 7.19104 98.6528 6.52816 99.1656 5.96593C99.6783 5.39675 100.305 4.94905 101.046 4.62281C101.786 4.29658 102.627 4.13346 103.567 4.13346C104.044 4.13346 104.496 4.20287 104.923 4.34169C105.358 4.48052 105.753 4.67834 106.109 4.93516C106.472 5.18504 106.789 5.49046 107.06 5.8514C107.338 6.20539 107.555 6.60104 107.712 7.03833L109.314 4.42499H110.703V15.0033ZM107.071 10.4117C107.071 10.0994 107.053 9.76968 107.017 9.42262C106.989 9.07556 106.935 8.73198 106.857 8.39186C106.779 8.05174 106.668 7.72898 106.526 7.42357C106.391 7.11122 106.212 6.83704 105.992 6.60104C105.778 6.3581 105.518 6.16722 105.212 6.0284C104.906 5.88957 104.55 5.82016 104.144 5.82016C103.738 5.82016 103.385 5.89304 103.086 6.03881C102.787 6.17763 102.531 6.36851 102.317 6.61145C102.103 6.84745 101.925 7.12163 101.783 7.43398C101.647 7.74633 101.541 8.07257 101.462 8.41268C101.384 8.7528 101.327 9.09639 101.291 9.44345C101.263 9.78356 101.249 10.1063 101.249 10.4117C101.249 10.7171 101.263 11.0434 101.291 11.3904C101.327 11.7375 101.384 12.0811 101.462 12.4212C101.541 12.7613 101.647 13.0876 101.783 13.3999C101.925 13.7123 102.103 13.9899 102.317 14.2328C102.531 14.4688 102.787 14.6597 103.086 14.8055C103.385 14.9443 103.738 15.0137 104.144 15.0137C104.514 15.0137 104.842 14.9408 105.126 14.7951C105.418 14.6424 105.671 14.4411 105.885 14.1912C106.106 13.9413 106.291 13.6567 106.44 13.3374C106.59 13.0181 106.711 12.6884 106.804 12.3483C106.896 12.0082 106.964 11.6716 107.007 11.3384C107.049 10.9983 107.071 10.6894 107.071 10.4117Z"
+              fill="white"
+            />
+            <path
+              d="M124.216 5.48699L122.186 8.76668C122.101 8.48904 121.991 8.17668 121.855 7.82963C121.72 7.48257 121.553 7.1598 121.353 6.86133C121.154 6.55592 120.915 6.30257 120.637 6.10128C120.36 5.89304 120.039 5.78893 119.676 5.78893C119.341 5.78893 119.049 5.87222 118.8 6.03881C118.558 6.20539 118.351 6.42404 118.18 6.69475C118.009 6.95851 117.867 7.26045 117.753 7.60057C117.646 7.93374 117.561 8.27386 117.497 8.62092C117.44 8.96103 117.401 9.29074 117.379 9.61003C117.358 9.92239 117.347 10.1931 117.347 10.4221V16.4505H113.726V4.42499H115.115L116.578 7.22575C116.777 6.77457 117.005 6.36157 117.262 5.98675C117.518 5.60498 117.814 5.27875 118.148 5.00805C118.483 4.7304 118.861 4.51522 119.281 4.36252C119.708 4.20981 120.189 4.13346 120.723 4.13346C121.001 4.13346 121.31 4.15775 121.652 4.20634C121.994 4.24799 122.329 4.32434 122.656 4.4354C122.984 4.53952 123.287 4.67834 123.564 4.85187C123.842 5.0254 124.059 5.2371 124.216 5.48699Z"
+              fill="white"
+            />
+            <path
+              d="M138.445 10.4117C138.445 11.0364 138.36 11.623 138.189 12.1713C138.018 12.7197 137.779 13.2264 137.473 13.6914C137.174 14.1565 136.811 14.5764 136.383 14.9513C135.956 15.3191 135.486 15.6315 134.973 15.8883C134.468 16.1451 133.923 16.343 133.339 16.4818C132.762 16.6206 132.167 16.69 131.555 16.69C130.942 16.69 130.348 16.6206 129.771 16.4818C129.194 16.343 128.649 16.1451 128.137 15.8883C127.631 15.6315 127.164 15.3191 126.737 14.9513C126.31 14.5764 125.943 14.1565 125.637 13.6914C125.338 13.2264 125.103 12.7197 124.932 12.1713C124.761 11.616 124.675 11.0295 124.675 10.4117C124.675 9.79397 124.761 9.21092 124.932 8.66256C125.103 8.10727 125.338 7.5971 125.637 7.13204C125.943 6.66698 126.31 6.25051 126.737 5.88263C127.164 5.50781 127.631 5.19199 128.137 4.93516C128.649 4.67834 129.194 4.48052 129.771 4.34169C130.348 4.20287 130.942 4.13346 131.555 4.13346C132.167 4.13346 132.762 4.20287 133.339 4.34169C133.923 4.48052 134.468 4.67834 134.973 4.93516C135.486 5.19199 135.956 5.50781 136.383 5.88263C136.811 6.25051 137.174 6.66698 137.473 7.13204C137.779 7.5971 138.018 8.10727 138.189 8.66256C138.36 9.21092 138.445 9.79397 138.445 10.4117ZM134.77 10.4117C134.77 10.0786 134.749 9.72803 134.706 9.36015C134.671 8.98533 134.607 8.62092 134.514 8.26692C134.421 7.90598 134.293 7.56239 134.129 7.23616C133.973 6.90298 133.777 6.61492 133.542 6.37198C133.307 6.1221 133.026 5.92428 132.698 5.77851C132.37 5.62581 131.989 5.54946 131.555 5.54946C131.142 5.54946 130.775 5.62581 130.455 5.77851C130.134 5.93122 129.853 6.13598 129.611 6.39281C129.376 6.64269 129.176 6.93422 129.012 7.26739C128.856 7.60057 128.728 7.94763 128.628 8.30857C128.528 8.66256 128.457 9.02351 128.414 9.39139C128.372 9.75233 128.35 10.0924 128.35 10.4117C128.35 10.731 128.372 11.0746 128.414 11.4425C128.457 11.8034 128.528 12.1644 128.628 12.5253C128.728 12.8863 128.856 13.2333 129.012 13.5665C129.176 13.8927 129.376 14.1843 129.611 14.4411C129.853 14.691 130.134 14.8923 130.455 15.045C130.775 15.1977 131.142 15.274 131.555 15.274C131.982 15.274 132.36 15.2011 132.687 15.0554C133.015 14.9027 133.296 14.7014 133.531 14.4515C133.773 14.2016 133.973 13.9136 134.129 13.5873C134.286 13.2611 134.411 12.9175 134.503 12.5566C134.603 12.1956 134.671 11.8312 134.706 11.4633C134.749 11.0954 134.77 10.7449 134.77 10.4117Z"
+              fill="white"
+            />
+            <path
+              d="M144 14.8888C144 15.1525 143.95 15.4024 143.85 15.6384C143.751 15.8675 143.612 16.0688 143.434 16.2423C143.256 16.4089 143.049 16.5408 142.814 16.638C142.579 16.7421 142.326 16.7941 142.056 16.7941C141.785 16.7941 141.532 16.7421 141.297 16.638C141.062 16.5408 140.856 16.4089 140.678 16.2423C140.5 16.0688 140.361 15.8675 140.261 15.6384C140.161 15.4024 140.112 15.1525 140.112 14.8888C140.112 14.632 140.161 14.389 140.261 14.16C140.361 13.924 140.5 13.7227 140.678 13.5561C140.856 13.3826 141.062 13.2472 141.297 13.15C141.532 13.0459 141.785 12.9938 142.056 12.9938C142.326 12.9938 142.579 13.0459 142.814 13.15C143.049 13.2472 143.256 13.3826 143.434 13.5561C143.612 13.7227 143.751 13.924 143.85 14.16C143.95 14.389 144 14.632 144 14.8888Z"
+              fill="white"
+            />
+          </svg>
+          <p
+            class="mt-4 pb-6 border-b border-white/40 mb-6 text-white/80 w-[600px]"
+          >
+            Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea
+            dictumst. Duis porta,quam ut finibus ultrices.
+          </p>
+          <div class="flex items-center">
+            <img src="assets/fb-icon.png" alt="" class="mr-4" />
+            <img src="assets/twitter-icon.png" alt="" class="mr-4" />
+            <img src="assets/yt-icon.png" alt="" class="mr-4" />
+            <img src="assets/ig-icon.png" alt="" />
+          </div>
+        </aside>
+        <aside class="flex">
+          <div class="mr-16">
+            <h3 class="font-livvic font-semibold text-lg mb-4">Useful Links</h3>
+            <ul>
+              <li class="mb-3 font-gothic text-white/80 text-sm">
+                New Projects
+              </li>
+              <li class="mb-3 font-gothic text-white/80 text-sm">
+                Our Services
+              </li>
+              <li class="mb-3 font-gothic text-white/80 text-sm">
+                Testimonials
+              </li>
+              <li class="mb-3 font-gothic text-white/80 text-sm">About Us</li>
+              <li class="font-gothic text-white/80 text-sm">Contact Us</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-livvic font-semibold text-lg mb-4">Newsletter</h3>
+            <p class="font-gothic text-white/80 text-sm w-[250px] mb-6">
+              Subscribe to our weekly Newsletter and receive updates via email.
+            </p>
+            <div class="bg-[#263C28] py-4 pl-6 pr-2 rounded-full">
+              <input
+                type="email"
+                placeholder="Enter yor mail here..."
+                class="text-sm"
+              />
+              <span
+                class="bg-[#F7C35F] text-[#1A1A1A] py-3 px-3 rounded-full text-sm"
+                >GO</span
+              >
+            </div>
+          </div>
+        </aside>
+      </article>
+      <hr class="bg-white/40 h-[0.5px] border-none" />
+      <article
+        class="container mx-auto flex justify-between py-8 text-white font-livvic text-sm"
+      >
+        <p>Copyright ©Smart Agro. All Right Reserved.</p>
+        <p>
+          <span>Terms & Conditions</span
+          ><span class="ml-8">Privacy Policy</span>
+        </p>
+      </article>
+    </footer>
 
     <script src="script.js"></script>
   </body>
