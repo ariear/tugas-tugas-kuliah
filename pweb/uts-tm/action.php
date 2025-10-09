@@ -13,9 +13,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           VALUES ('$nama_lengkap', '$nim', '$angkatan', '$topik_permasalahan', '$kritik', '$saran')";
 
   if ($conn->query($sql) === TRUE) {
-    echo "<script>alert('Aspirasi berhasil dikirim!! Terima kasih atas partisipasinya yaww!'); window.location.href=document.referrer;</script>";
+    echo "<script>
+      alert('Aspirasi berhasil dikirim!! Terima kasih atas partisipasinya yaww!');
+      window.location.href='table.php';
+    </script>";
   } else {
-    echo "<script>alert('Waduh. Sepertinya aspirasi gagal dikirim nih!: " . $conn->error . "'); window.history.back();</script>";
+    echo "<script>
+      alert('Waduh. Sepertinya aspirasi gagal dikirim nih!: " . $conn->error . "');
+      window.history.back();  
+    </script>";
   }
 }
 
