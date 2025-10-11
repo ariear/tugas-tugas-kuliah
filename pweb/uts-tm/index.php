@@ -1,3 +1,10 @@
+<?php
+  include "koneksi.php";
+  session_start();
+
+  $topik_query = "SELECT * FROM TopikPermasalahan";
+  $topik_data = $conn->query($topik_query);
+?>
 <!doctype html>
 <html>
 
@@ -34,12 +41,22 @@
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <a href="index.php" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Form Serap</a>
+              <a href="index.php" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white">Form Serap</a>
               <a href="table.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white">Daftar hasil Serap</a>
             </div>
           </div>
         </div>
 
+        <?php if (isset($_SESSION['admin_id'])) { ?>
+          <a href="kelola_akun.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Kelola Akun</a>
+          <a href="kelola_aspirasi.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Kelola Aspirasi</a>
+          <a href="kelola_topik.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Kelola Topik</a>
+          <form method="POST" action="action.php">
+            <button type="submit" name="submit_logout" class="bg-red-400 rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Logout</button>
+          </form>
+        <?php } else {?>
+          <a href="login.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Login Admin</a>
+        <?php } ?>
         <button id="themeToggle" class="ml-4 p-2 rounded-md bg-white/10 hover:bg-white/20 text-white dark:text-yellow-300">
           <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.485-8.485h1M3.515 12.515h1M17.657 6.343l.707.707M5.636 18.364l.707.707M17.657 17.657l.707-.707M5.636 5.636l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
@@ -53,8 +70,18 @@
 
     <div id="mobileMenu" class="hidden sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
-        <a href="index.php" aria-current="page" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white">Form Serap</a>
+        <a href="index.php" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Form Serap</a>
         <a href="table.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Daftar Hasil Serap</a>
+        <?php if (isset($_SESSION['admin_id'])) { ?>
+          <a href="kelola_akun.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Kelola Akun</a>
+          <a href="kelola_aspirasi.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Kelola Aspirasi</a>
+          <a href="kelola_topik.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Kelola Topik</a>
+          <form method="POST" action="action.php">
+            <button type="submit" name="submit_logout" class="block bg-red-400 rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Logout</button>
+          </form>
+        <?php } else {?>
+          <a href="login.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Login Admin</a>
+        <?php } ?>
       </div>
     </div>
   </nav>
@@ -104,14 +131,16 @@
           </label>
           <select id="topik" name="topik_permasalahan" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" required>
             <option value="">Pilih topik permasalahan</option>
-            <option value="civitas akademik">Civitas Akademik</option>
-            <option value="fasilitas">Fasilitas</option>
-            <option value="organisasi mahasiswa">Organisasi Mahasiswa</option>
-            <option value="himpunan prodi">Himpunan Prodi</option>
-            <option value="ukm">UKM</option>
-            <option value="ukt">UKT</option>
-            <option value="sarana prasarana">Sarana Prasarana</option>
-            <option value="lainnya">Lainnya</option>
+
+            <?php if ($topik_data && $topik_data->num_rows > 0) { ?>
+              <?php while ($row = $topik_data->fetch_assoc()) { ?>
+                <option value="<?php echo htmlspecialchars($row['id']); ?>">
+                  <?php echo $row['judul']; ?>
+                </option>
+              <?php } ?>
+            <?php } else { ?>
+              <option value="">Belum ada topik</option>
+            <?php } ?>
           </select>
         </div>
       </div>
@@ -131,7 +160,7 @@
       </div>
 
       <div class="pt-4">
-        <button type="submit" class="w-full bg-green-700/80 hover:bg-green-700 text-white font-semibold py-2.5 rounded-lg transition duration-200 cursor-pointer">
+        <button type="submit" name="submit_aspirasi" class="w-full bg-green-700/80 hover:bg-green-700 text-white font-semibold py-2.5 rounded-lg transition duration-200 cursor-pointer">
           Kirim
         </button>
       </div>

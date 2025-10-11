@@ -1,20 +1,16 @@
 <?php
-include "koneksi.php";
-session_start();
+  include "koneksi.php";
+  session_start();
 
-$sql = "SELECT a.*, t.judul AS topik_permasalahan
-        FROM Aspirasi a
-        LEFT JOIN TopikPermasalahan t ON a.topik_permasalahan_id = t.id
-        ORDER BY a.tanggal_dibuat DESC";
-$result = $conn->query($sql);
+  $sql = "SELECT * FROM Admin ORDER BY id ASC";
+  $result = $conn->query($sql);
 ?>
-
 <!doctype html>
 <html>
 
 <head>
   <meta charset="UTF-8" />
-  <title>SERAP ASPIRASI | TABLE</title>
+  <title>SERAP ASPIRASI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -46,13 +42,13 @@ $result = $conn->query($sql);
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <a href="index.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white">Form Serap</a>
-              <a href="table.php" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white">Daftar Hasil Serap</a>
+              <a href="table.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white">Daftar hasil Serap</a>
             </div>
           </div>
         </div>
 
         <?php if (isset($_SESSION['admin_id'])) { ?>
-          <a href="kelola_akun.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Kelola Akun</a>
+          <a href="kelola_akun.php" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Kelola Akun</a>
           <a href="kelola_aspirasi.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Kelola Aspirasi</a>
           <a href="kelola_topik.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-white/5 hover:text-white hidden sm:inline-block">Kelola Topik</a>
           <form method="POST" action="action.php">
@@ -75,9 +71,9 @@ $result = $conn->query($sql);
     <div id="mobileMenu" class="hidden sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <a href="index.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Form Serap</a>
-        <a href="table.php" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium hover:bg-white/5 hover:text-white">Daftar Hasil Serap</a>
+        <a href="table.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Daftar Hasil Serap</a>
         <?php if (isset($_SESSION['admin_id'])) { ?>
-          <a href="kelola_akun.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Kelola Akun</a>
+          <a href="kelola_akun.php" class="block bg-gray-950/50 rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Kelola Akun</a>
           <a href="kelola_aspirasi.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Kelola Aspirasi</a>
           <a href="kelola_topik.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Kelola Topik</a>
           <form method="POST" action="action.php">
@@ -91,71 +87,128 @@ $result = $conn->query($sql);
   </nav>
 
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-10">
-    <h1 class="text-3xl font-bold mb-10">
-      Daftar Hasil Serap Aspirasi Mahasiswa
-    </h1>
-    <div class="overflow-x-auto border border-gray-200 rounded-xl">
+    <div class="flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold mb-2">Kelola Akun Admin</h1>
+        <p class="text-black/70 dark:text-white/80 mb-10">
+          Daftar akun admin
+        </p>
+      </div>
+      <button
+        id="btnTambahAdmin"
+        class="px-4 py-2 bg-green-700/80 hover:bg-green-700 text-white rounded-lg text-sm font-medium"
+      >
+        Tambah Admin
+      </button>
+    </div>
+
+    <div class="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
       <table class="min-w-full text-sm text-gray-700 dark:text-white">
         <thead class="bg-gray-50 text-gray-600 uppercase text-xs font-semibold">
           <tr>
             <th class="px-4 py-3 text-left">No</th>
-            <th class="px-4 py-3 text-left">Nama Lengkap</th>
-            <th class="px-4 py-3 text-left">NIM</th>
-            <th class="px-4 py-3 text-left">Angkatan</th>
-            <th class="px-4 py-3 text-left">Topik Permasalahan</th>
-            <th class="px-4 py-3 text-left">Status</th>
+            <th class="px-4 py-3 text-left">Nama</th>
             <th class="px-4 py-3 text-center">Aksi</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-gray-200">
           <?php
-          if ($result->num_rows > 0) {
+          if ($result && $result->num_rows > 0) {
             $no = 1;
             while ($row = $result->fetch_assoc()) {
-              if ($row['status'] === 'terbaca') {
-                $statusClass = 'bg-green-100 text-green-800';
-                $statusText = 'Terbaca';
-              } else {
-                $statusClass = 'bg-yellow-100 text-yellow-800';
-                $statusText = 'Belum Dibaca';
-              }
           ?>
-              <tr class='hover:bg-gray-50 dark:hover:bg-gray-800/80'>
-                <td class='px-4 py-3'><?php echo $no ?></td>
-                <td class='px-4 py-3'><?php echo $row['nama_lengkap'] ?></td>
-                <td class='px-4 py-3'><?php echo $row['nim'] ?></td>
-                <td class='px-4 py-3'><?php echo $row['angkatan'] ?></td>
-                <td class='px-4 py-3'><?php echo $row['topik_permasalahan'] ?? '-' ?></td>
-                <td class='px-4 py-3'>
-                  <span class='px-2 py-1 text-xs font-medium rounded-full <?php echo $statusClass ?>'><?php echo $statusText ?></span>
-                </td>
-                <td class='px-4 py-3 text-center space-x-2'>
-                  <button class="lihat-detail px-3 py-1 text-xs text-white bg-blue-500 rounded-lg hover:bg-blue-600" data-detail='<?php echo json_encode($row, JSON_HEX_APOS | JSON_HEX_QUOT); ?>'>
-                    Lihat Detail
+              <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/80 transition">
+                <td class="px-4 py-3"><?= $no ?></td>
+                <td class="px-4 py-3"><?= $row['nama'] ?></td>
+                <td class="px-4 py-3 text-center space-x-2">
+                  <button
+                    class="edit-admin px-3 py-1 text-xs text-white bg-blue-500 rounded-lg hover:bg-blue-600"
+                    data-id="<?= $row['id'] ?>"
+                    data-nama="<?= $row['nama'] ?>"
+                  >
+                    Edit
+                  </button>
+
+                  <button
+                    onclick="hapusAdmin(<?= $row['id'] ?>)"
+                    class="px-3 py-1 text-xs text-white bg-red-500 rounded-lg hover:bg-red-600"
+                  >
+                    Hapus
                   </button>
                 </td>
               </tr>
-            <?php
+          <?php
               $no++;
             }
           } else {
-            ?>
-            <tr>
-              <td colspan='7' class='px-4 py-3 text-center text-gray-500'>Belum ada data aspirasi.</td>
-            </tr>
-
-          <?php }
           ?>
+            <tr>
+              <td colspan="4" class="px-4 py-3 text-center text-gray-500">Belum ada data admin.</td>
+            </tr>
+          <?php } ?>
         </tbody>
       </table>
     </div>
   </div>
 
-  <div id="detailModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
-    <div class="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative">
-      <h2 class="text-xl font-semibold mb-4 dark:text-black">Detail Aspirasi</h2>
-      <div id="detailContent" class="space-y-2 text-sm text-gray-700"></div>
-      <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">&times;</button>
+  <div id="tambahModal" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 w-96">
+      <h2 class="text-lg font-semibold mb-4 text-gray-700 dark:text-white">Tambah Admin Baru</h2>
+      <form action="action.php" method="POST" class="space-y-4">
+        <div>
+          <label for="tambahNama" class="block text-sm font-medium text-gray-700 dark:text-white mb-1">Nama Admin</label>
+          <input
+            type="text"
+            id="tambahNama"
+            name="nama"
+            required
+            class="w-full px-4 py-2 border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+          />
+        </div>
+        <div>
+          <label for="tambahPassword" class="block text-sm font-medium text-gray-700 dark:text-white mb-1">Password</label>
+          <input
+            type="password"
+            id="tambahPassword"
+            name="password"
+            required
+            class="w-full px-4 py-2 border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+          />
+        </div>
+        <div class="flex justify-end space-x-2 pt-2">
+          <button
+            type="button"
+            onclick="tutupTambahModal()"
+            class="px-4 py-2 text-sm text-black bg-gray-300 hover:bg-gray-400 rounded-lg"
+          >
+            Batal
+          </button>
+          <button
+            type="submit"
+            name="submit_tambah_admin"
+            class="px-4 py-2 text-sm bg-green-600 hover:bg-green-700 text-white rounded-lg"
+          >
+            Simpan
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="editModal" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 w-96">
+      <h2 class="text-lg font-semibold mb-4 text-gray-700 dark:text-white">Edit Nama Admin</h2>
+      <form action="action.php" method="POST" class="space-y-4">
+        <input type="hidden" name="id" id="editId">
+        <div>
+          <label for="editNama" class="block text-sm font-medium text-gray-700 dark:text-white mb-1">Nama Baru</label>
+          <input type="text" id="editNama" name="nama" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none text-black" />
+        </div>
+        <div class="flex justify-end space-x-2 pt-2">
+          <button type="button" onclick="tutupModal()" class="px-4 py-2 text-sm bg-gray-300 text-black hover:bg-gray-400 rounded-lg">Batal</button>
+          <button type="submit" name="edit_admin" class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Simpan</button>
+        </div>
+      </form>
     </div>
   </div>
 
