@@ -33,7 +33,7 @@ CREATE TABLE Aspirasi (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO Admin (nama, password) VALUES 
-('admin', '12345')
+('admin', '12345');
 
 INSERT INTO TopikPermasalahan (judul) VALUES
 ('Civitas Akademik'),
